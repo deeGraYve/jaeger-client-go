@@ -17,7 +17,7 @@ package jaeger
 import (
 	"errors"
 
-	"github.com/apache/thrift/lib/go/thrift"
+	"github.com/deeGraYve/thrift/lib/go/thrift"
 
 	j "github.com/uber/jaeger-client-go/thrift-gen/jaeger"
 	"github.com/uber/jaeger-client-go/utils"

@@ -19,7 +19,7 @@ import (
 	"net"
 	"sync/atomic"
 
-	"github.com/apache/thrift/lib/go/thrift"
+	"github.com/deeGraYve/thrift/lib/go/thrift"
 )
 
 const (
