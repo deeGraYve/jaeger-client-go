@@ -25,11 +25,11 @@ import (
 
 	"github.com/apache/thrift/lib/go/thrift"
 
-	"github.com/uber/jaeger-client-go/thrift-gen/agent"
-	"github.com/uber/jaeger-client-go/thrift-gen/jaeger"
-	"github.com/uber/jaeger-client-go/thrift-gen/sampling"
-	"github.com/uber/jaeger-client-go/thrift-gen/zipkincore"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/deeGraYve/jaeger-client-go/thrift-gen/agent"
+	"github.com/deeGraYve/jaeger-client-go/thrift-gen/jaeger"
+	"github.com/deeGraYve/jaeger-client-go/thrift-gen/sampling"
+	"github.com/deeGraYve/jaeger-client-go/thrift-gen/zipkincore"
+	"github.com/deeGraYve/jaeger-client-go/utils"
 )
 
 // StartMockAgent runs a mock representation of jaeger-agent.

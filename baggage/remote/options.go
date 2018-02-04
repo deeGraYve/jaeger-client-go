@@ -17,7 +17,7 @@ package remote
 import (
 	"time"
 
-	"github.com/uber/jaeger-client-go"
+	"github.com/deeGraYve/jaeger-client-go"
 )
 
 const (

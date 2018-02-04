@@ -23,9 +23,9 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 
-	"github.com/uber/jaeger-client-go"
+	"github.com/deeGraYve/jaeger-client-go"
 	"github.com/deeGraYve/jaeger-client-go/baggage/remote"
-	"github.com/uber/jaeger-client-go/rpcmetrics"
+	"github.com/deeGraYve/jaeger-client-go/rpcmetrics"
 )
 
 const defaultSamplingProbability = 0.001

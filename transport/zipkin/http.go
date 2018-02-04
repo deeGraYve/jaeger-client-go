@@ -32,9 +32,9 @@ import (
 
 	"github.com/apache/thrift/lib/go/thrift"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-client-go/thrift-gen/zipkincore"
+	"github.com/deeGraYve/jaeger-client-go"
+	"github.com/deeGraYve/jaeger-client-go/log"
+	"github.com/deeGraYve/jaeger-client-go/thrift-gen/zipkincore"
 )
 
 // Default timeout for http request in seconds

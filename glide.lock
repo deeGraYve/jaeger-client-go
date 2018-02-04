@@ -1,5 +1,5 @@
-hash: 210565f0adaf57352066ef71339ce9cbe94ee347e93a7209c0e120e60eca7be6
-updated: 2018-02-04T16:35:41.560953-05:00
+hash: 48067c5968612faf314c0dff160786909fb24bdc21c73483329c0863afff60d1
+updated: 2018-02-04T16:38:38.215916089-05:00
 imports:
 - name: github.com/apache/thrift
   version: 327ebb6c2b6df8bf075da02ef45a2a034e9b79ba
@@ -20,11 +20,6 @@ imports:
   version: ecdeabc65495df2dec95d7c4a4c3e021903035e5
   subpackages:
   - spew
-- name: github.com/deeGraYve/jaeger-client-go
-  version: 459207eb2973b1914d578a6c1d9ec378b44713e7
-  subpackages:
-  - baggage
-  - baggage/remote
 - name: github.com/golang/protobuf
   version: 7cc19b78d562895b13596ddce7aafb59dd789318
   subpackages:
