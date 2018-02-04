@@ -6,7 +6,7 @@ package sampling
 import (
 	"bytes"
 	"fmt"
-	"github.com/deeGraYve/thrift/lib/go/thrift"
+	"github.com/apache/thrift/lib/go/thrift"
 )
 
 // (needed to ensure safety because of naive import list construction.)

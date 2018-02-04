@@ -6,7 +6,7 @@ package tracetest
 import (
 	"fmt"
 
-	athrift "github.com/deeGraYve/thrift/lib/go/thrift"
+	athrift "github.com/apache/thrift/lib/go/thrift"
 	"github.com/uber/tchannel-go/thrift"
 )
 
