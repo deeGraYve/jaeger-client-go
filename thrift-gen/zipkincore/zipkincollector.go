@@ -99,14 +99,13 @@ func (p *ZipkinCollectorClient) recvSubmitZipkinBatch() (value []*Response, err 
 	if mTypeId == thrift.EXCEPTION {
 		error2 := thrift.NewTApplicationException(thrift.UNKNOWN_APPLICATION_EXCEPTION, "Unknown Exception")
 		var error3 error
-		error3, err = error2.Read(iprot)
+		err = error2.Read(iprot)
 		if err != nil {
 			return
 		}
 		if err = iprot.ReadMessageEnd(); err != nil {
 			return
 		}
-		err = error3
 		return
 	}
 	if mTypeId != thrift.REPLY {
@@ -172,7 +171,7 @@ type zipkinCollectorProcessorSubmitZipkinBatch struct {
 	handler ZipkinCollector
 }
 
-func (p *zipkinCollectorProcessorSubmitZipkinBatch) Process(seqId int32, iprot, oprot thrift.TProtocol) (success bool, err thrift.TException) {
+func (p *zipkinCollectorProcessorSubmitZipkinBatch) Process(context context.Context, seqId int32, iprot, oprot thrift.TProtocol) (success bool, err thrift.TException) {
 	args := ZipkinCollectorSubmitZipkinBatchArgs{}
 	if err = args.Read(iprot); err != nil {
 		iprot.ReadMessageEnd()
