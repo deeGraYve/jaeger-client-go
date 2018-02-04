@@ -26,7 +26,7 @@ import (
 	"github.com/uber/jaeger-lib/metrics"
 	"github.com/uber/jaeger-lib/metrics/testutils"
 
-	"github.com/uber/jaeger-client-go/internal/baggage"
+	"github.com/deeGraYve/jaeger-client-go/baggage"
 	"github.com/uber/jaeger-client-go/log"
 	"github.com/uber/jaeger-client-go/utils"
 )

@@ -30,7 +30,7 @@ import (
 	"github.com/uber/jaeger-lib/metrics/testutils"
 
 	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/internal/baggage"
+	"github.com/deeGraYve/jaeger-client-go/baggage"
 	thrift "github.com/uber/jaeger-client-go/thrift-gen/baggage"
 )
 

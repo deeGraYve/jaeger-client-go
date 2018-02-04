@@ -19,7 +19,7 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 
-	"github.com/uber/jaeger-client-go/internal/baggage"
+	"github.com/deeGraYve/jaeger-client-go/baggage"
 )
 
 // TracerOption is a function that sets some option on the tracer
