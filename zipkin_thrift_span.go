@@ -21,7 +21,6 @@ import (
 
 	"github.com/opentracing/opentracing-go/ext"
 
-	"github.com/uber/jaeger-client-go/internal/spanlog"
 	z "github.com/uber/jaeger-client-go/thrift-gen/zipkincore"
 	"github.com/uber/jaeger-client-go/utils"
 )
@@ -97,7 +96,7 @@ func buildAnnotations(span *zipkinSpan, endpoint *z.Endpoint) []*z.Annotation {
 		anno := &z.Annotation{
 			Timestamp: utils.TimeToMicrosecondsSinceEpochInt64(log.Timestamp),
 			Host:      endpoint}
-		if content, err := spanlog.MaterializeWithJSON(log.Fields); err == nil {
+		if content, err := MaterializeWithJSON(log.Fields); err == nil {
 			anno.Value = truncateString(string(content))
 		} else {
 			anno.Value = err.Error()
