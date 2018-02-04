@@ -170,7 +170,7 @@ type samplingManagerProcessorGetSamplingStrategy struct {
 	handler SamplingManager
 }
 
-func (p *samplingManagerProcessorGetSamplingStrategy) Process(seqId int32, iprot, oprot thrift.TProtocol) (success bool, err thrift.TException) {
+func (p *samplingManagerProcessorGetSamplingStrategy) Process(context context.Context, seqId int32, iprot, oprot thrift.TProtocol) (success bool, err thrift.TException) {
 	args := SamplingManagerGetSamplingStrategyArgs{}
 	if err = args.Read(iprot); err != nil {
 		iprot.ReadMessageEnd()
