@@ -126,7 +126,7 @@ type agentProcessorEmitBatch struct {
 	handler Agent
 }
 
-func (p *agentProcessorEmitBatch) Process(seqId int32, iprot, oprot thrift.TProtocol) (success bool, err thrift.TException) {
+func (p *agentProcessorEmitBatch) Process(context context.Context, seqId int32, iprot, oprot thrift.TProtocol) (success bool, err thrift.TException) {
 	args := AgentEmitBatchArgs{}
 	if err = args.Read(iprot); err != nil {
 		iprot.ReadMessageEnd()
