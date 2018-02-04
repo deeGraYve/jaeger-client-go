@@ -98,7 +98,6 @@ func (p *ZipkinCollectorClient) recvSubmitZipkinBatch() (value []*Response, err 
 	}
 	if mTypeId == thrift.EXCEPTION {
 		error2 := thrift.NewTApplicationException(thrift.UNKNOWN_APPLICATION_EXCEPTION, "Unknown Exception")
-		var error3 error
 		err = error2.Read(iprot)
 		if err != nil {
 			return
