@@ -24,7 +24,7 @@ import (
 	"github.com/opentracing/opentracing-go"
 
 	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/internal/baggage/remote"
+	"github.com/deeGraYve/jaeger-client-go/baggage/remote"
 	"github.com/uber/jaeger-client-go/rpcmetrics"
 )
 
